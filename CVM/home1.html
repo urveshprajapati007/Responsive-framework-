@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CVMU | HOME Page</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+	html, body { height: 100px;
+font-family: Arial, sans-serif;
+}
+	body { display: flex;
+flex-direction: column;
+}
+	.title-bar { display: flex;
+align-items: center;
+justify-content: space-between; background-color: rgb(179, 192, 226);
+color: rgb(3, 83, 152); position: fixed;
+top: 0;
+width: 1800px; z-index: 1000;
+}
+	.logo {
+height: 50px;
+}
+	.title-text { position: absolute;
+ 
+
+
+	font-size: 24px; text-align: center; width: 1800px;
+}
+.nav-bar { position: fixed; top: 50px; width: 1800px;
+background-color: #333333;
+z-index: 999;
+}
+
+.nav-bar ul {
+list-style: none; display: flex;
+justify-content: center; padding: 10px 0;
+flex-wrap: wrap;
+}
+
+.nav-bar li { margin: 0 15px;
+}
+
+.nav-bar a {
+color: rgb(107, 128, 205); text-decoration: none; font-weight: bold; transition: color 0.3s ease;
+}
+
+.nav-bar a:hover {
+color: rgb(199, 106, 40);
+}
+
+main.content { flex: 1;
+margin-top: 120px; display: flex;
+flex-wrap: wrap; padding: 0;
+}
+
+.left-frame { width: 280px; padding: 20px;
+background-color: #2c86e0; height: 600px;
+ 
+
+
+	border: 3px solid gray; border-radius: 7px;
+}
+
+.right-frame {
+background-color: #5695b1; width: 1220px;
+padding: 20px; height: 600px;
+flex-direction: column; justify-content: center; margin-left: 10px; border: 3px solid gray; border-radius: 7px;
+}
+
+.right-frame h3 { margin-bottom: 8px;
+}
+
+.right-frame p { margin: 0;
+line-height: 1.5;
+}
+.left-frame h3,ul{ list-style: none;
+justify-content: center; margin-bottom: 10px;
+}
+.left-frame ul { list-style: none;
+}
+
+.left-frame li { margin: 10px;
+color: rgb(15, 15, 15); text-decoration: none; font-weight: bold;
+
+}
+footer {
+background-color: #222; color: white;
+text-align: center; padding: 15px; font-size: 14px;
+}
+</style>
+ 
+
+
+	</head>
+<body>
+<header class="title-bar">
+<img src="image/cvmu.png" alt="CVM University Logo" class="logo">
+<h1 class="title-text">THE CVM UNIVERSITY</h1>
+</header>
+
+<nav class="nav-bar">
+<ul>
+<li><a href="Home.html">HOME</a></li>
+<li><a href="Istar.html">ISTAR</a></li>
+<li><a href="Nvpass.html">NVPASS</a></li>
+<li><a href="Semcom.html">SEMCOM</a></li>
+<li><a href="Adit.html">ADIT</a></li>
+</ul>
+</nav>
+
+<main class="content">
+<div class="left-frame">
+<h3>Departments</h3>
+<ul>
+<li>Computer Science</li>
+<li>Cyber Security</li>
+<li>IOT</li>
+</ul>
+</div>
+<div class="right-frame">
+<h3>Description</h3>
+<p>
+Charutar Vidya Mandal University (CVM University), established in 2019 in Vallabh Vidyanagar, Gujarat, is a private university with a strong lineage tracing back to 1945 under the Charutar Vidya Mandal Trust. It's recognized by the University Grants Commission (UGC) and offers a wide range of undergraduate, postgraduate, and doctoral programs across various disciplines. The university is known for its focus on research and innovation, aiming to foster a culture of creativity and leadership among its students.
+</p>
+</div>
+</main>
+<footer>
+&copy; 2025 CVM University. All rights reserved.
+</footer>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SEMCOM</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .title-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color:  rgb(179, 192, 226);
+      color: rgb(3, 83, 152);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 5px 20px;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    .title-text {
+      font-size: 24px;
+      text-align: center;
+      flex: 1;
+    }
+
+    .nav-bar {
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      background-color: #333333;
+      z-index: 999;
+    }
+
+    .nav-bar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    .nav-bar li {
+      margin: 0 15px;
+    }
+
+    .nav-bar a {
+      color: rgb(107, 128, 205);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .nav-bar a:hover {
+      color: rgb(199, 106, 40);
+    }
+
+    main.content {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 110px; 
+    }
+
+    .left-frame {
+      flex: 1 1 200px;
+      max-width: 250px;
+      background-color: #2c86e0;
+      padding: 20px;
+    }
+
+    .left-frame h3 {
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    .left-frame ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .left-frame li {
+      margin: 10px ;
+    }
+
+    .left-frame a {
+      color:  rgb(15, 15, 15);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .left-frame a:hover {
+      color: red;
+    }
+
+    .right-frame {
+      flex: 3 1 400px;
+      background-color: #5695b1;
+      padding: 20px;
+      margin-left: 10px;
+      min-height: 400px;
+    }
+
+    .right-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .left-frame, .right-frame {
+        flex: 1 1 100%;
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Frame -->
+  <header class="title-bar">
+    <img src="image/adit.png" alt="CVM University Logo" class="logo">
+    <h1 class="title-text">ADIT</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="Home.html">HOME</a></li>
+      <li><a href="Istar.html">ISTAR</a></li>
+      <li><a href="Nvpass.html">NVPASS</a></li>
+      <li><a href="Semcom.html">SEMCOM</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="content">
+    <!-- Left Frame -->
+    <div class="left-frame">
+      <h3>Departments</h3>
+      <ul>
+        <li><a href="Cs.html" target="dept">Computer Science</a></li>
+        <li><a href="Chemistry.html" target="dept">Industrial Chemistry</a></li>
+        <li><a href="nv_micro.html" target="dept">Microbiology</a></li>
+      </ul>
+
+      <h3>Faculties</h3>
+    <ul>
+      <li><a href="faculty_science.html" target="dept">Faculty of Science</a></li>
+      <li><a href="faculty_arts.html" target="dept">Faculty of Arts</a></li>
+      <li><a href="faculty_commerce.html" target="dept">Faculty of Commerce</a></li>
+    </ul>
+    </div>
+
+    <!-- Right Frame -->
+    <div class="right-frame">
+      <iframe name="dept" src="Chemistry.html"></iframe>
+      <!-- Optional: You can also put a catalogue table here instead of iframe -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 CVM University. All rights reserved.
+  </footer>
+
+</body>
+</html>
